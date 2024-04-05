@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar CNPJ | Serviços em Nuvem</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <form>
+        <p>
+            Digite o seu CNPJ:</p>
+        <input class="escrever" type="text" id="cnpj" name="cnpj" required="required">
+        <br><br>
+
+        <button id="botao" type="button" value="Pesquisar informações no Receita WS" onclick="chamarServicoReceitaWs()">
+            Consultar CNPJ</button>
+
+        <article id="resultado">
+            <p><span id="resultado"></span></p>
+        </article>
+    </form>
+    <br>
+</body>
+
+</html>
